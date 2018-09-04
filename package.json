@@ -1,0 +1,46 @@
+{
+    "name": "@yanxlg/react-permission-test",
+    "version": "0.0.1",
+    "description": "基于react实现权限配置及自动化测试",
+    "keywords": [
+        "permission",
+        "auto-test"
+    ],
+    "license": "MIT",
+    "engines": {
+        "node": ">=6"
+    },
+    "dependencies": {
+        "react": ">=15",
+        "react-dom": ">=15"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:yanxianliang/react-permission-test.git"
+    },
+    "main": "./lib/index",
+    "module": "./es/index",
+    "scripts": {
+        "start": "rc-tools run server",
+        "build": "rc-tools run build",
+        "test": "react-scripts-ts test --env=jsdom",
+        "eject": "react-scripts-ts eject",
+        "prepublish": "rc-tools run guard",
+        "pub": "rc-tools run pub --babel-runtime",
+        "compile":"rc-tools run compile"
+    },
+    "files": [
+        "lib",
+        "es",
+        "dist"
+    ],
+    "devDependencies": {
+        "@types/node": "^10.3.2",
+        "@types/react": "^16.4.13",
+        "@types/react-dom":"^16.0.7",
+        "typescript": "^2.9.1",
+        "rc-tools":"^8.0.1",
+        "crypto-js":"^3.1.9-1",
+        "@types/crypto-js":"^3.1.41"
+    }
+}
